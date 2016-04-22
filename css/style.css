@@ -65,6 +65,7 @@ h1:hover {
 }
 
 .contact__email, .contact__number {
+	display: block;
 	font-family: 'Lekton';
 	text-decoration: none;
 	color: #0d0d0d;
@@ -72,6 +73,8 @@ h1:hover {
 }
 
 .contact__email {
+	display: inline-block;
+	line-height: 1;
 	border-bottom: 2px solid #ffffff;
 }
 
