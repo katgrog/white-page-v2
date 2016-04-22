@@ -51,7 +51,6 @@ h1:hover {
 /* hero */
 
 .hero-text {
-	/*opacity: 0;*/
 	font-size: 30px;
 	padding: 150px 0;
 	-webkit-animation: fadeIn ease-in 1;
@@ -67,12 +66,12 @@ h1:hover {
 
 .contact__email, .contact__number {
 	font-family: 'Lekton';
+	text-decoration: none;
+	color: #0d0d0d;
 	letter-spacing: 0;
 }
 
 .contact__email {
-	text-decoration: none;
-	color: #0d0d0d;
 	border-bottom: 2px solid #ffffff;
 }
 
