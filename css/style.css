@@ -13,14 +13,16 @@ body {
 	text-align: center;
 }
 
-.container {
-	width: 800px;
-	margin: 0 auto;
+.vertical-align-center {
+  position: absolute;
+  display: table;
+  height: 100%;
+  width: 100%;
 }
 
-.container--contact {
-	width: 550px;
-	margin: 0 auto;
+.vertical-align-center {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* header */
@@ -50,6 +52,13 @@ h1:hover {
 
 /* hero */
 
+.hero {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .hero-text {
 	font-size: 30px;
 	padding: 150px 0;
@@ -60,16 +69,21 @@ h1:hover {
 
 /* contact */
 
-.contact{
-	padding: 0 0 100px 0;
+.contact {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 30px;
 }
 
 .contact__email, .contact__number {
 	display: block;
-	font-family: 'Lekton';
+
 	text-decoration: none;
 	color: #0d0d0d;
 	letter-spacing: 0;
+  margin-top: 20px;
 }
 
 .contact__email {
@@ -80,20 +94,6 @@ h1:hover {
 
 .contact__email:hover {
 	border-bottom: 2px solid #0d0d0d;
-}
-
-
-/* media queries */
-
-@media (max-width: 900px) {
-	.hero-text {
-		font-size: 32px;
-	}
-
-	.container, .container--contact {
-		width: 100%;
-		padding: 0 60px;
-	}
 }
 
 /* animations */
@@ -108,18 +108,21 @@ h1:hover {
 	}
 }
 
-
+/* responsive */
 
 @media (max-width: 700px) {
-	.container {
-		padding: 0 40px;
-	}
-}
+	.hero-text {
+    font-size: 26px;
+  }
 
+  .contact__number, .contact__email {
+    font-size: 22px;
+  }
+}
 
 @media (max-width: 500px) {
 	.hero-text {
-		font-size: 26px;
+		font-size: 24px;
 	}
 
 	.contact__number, .contact__email {
